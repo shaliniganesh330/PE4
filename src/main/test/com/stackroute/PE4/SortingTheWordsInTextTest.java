@@ -31,4 +31,11 @@ public class SortingTheWordsInTextTest {
         String []actual = sortingob.sorting(input);
         assertNotEquals(expected,actual);
     }
+    @Test
+    public void testSortingTestFailure() {
+        String[] expected = {"array", "list", "in" ,"sorted", "the"};
+        String []input = {"sorted","array","in","the","list"};
+        String []actual = sortingob.sorting(input);
+        assertNotEquals(expected,actual);
+    }
 }

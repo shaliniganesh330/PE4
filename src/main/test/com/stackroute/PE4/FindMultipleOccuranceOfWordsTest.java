@@ -18,7 +18,7 @@ public class FindMultipleOccuranceOfWordsTest {
     }
 
     @Test
-    public void testFindMultipleoccuranceofwordsuccess()
+    public void testFindMultipleOccuranceOfWordTestSuccess()
     {
         String input="She sells seashells by the seashore";
        String expected ="Found at: 4-6Found at: 10-12Found at: 27-29";
@@ -32,5 +32,13 @@ public class FindMultipleOccuranceOfWordsTest {
         String expected ="Found at: 4-3Found at: 18-12Found at: 27-29";
         String actual = findMultipleOccuranceOfWords.findMultipleOccuranceOfWords(input);
         assertNotEquals(expected,actual);
+    }
+    @Test
+    public void testFindMultipleOccuranceOfWordsTestFailure()
+    {
+        String input=null;
+        String expected ="Null input is not expected";
+        String actual = findMultipleOccuranceOfWords.findMultipleOccuranceOfWords(input);
+        assertEquals(expected,actual);
     }
 }

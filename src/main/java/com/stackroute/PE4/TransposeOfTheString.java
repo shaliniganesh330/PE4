@@ -1,8 +1,6 @@
 /* Write a program to transpose the given string.*/
 package com.stackroute.PE4;
 
-import java.util.Scanner;
-
 public class TransposeOfTheString {
 /*method to transpose the string*/
     public static String transpose(String input) {

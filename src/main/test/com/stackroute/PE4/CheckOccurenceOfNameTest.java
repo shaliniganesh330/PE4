@@ -40,10 +40,10 @@ public class CheckOccurenceOfNameTest {
         assertEquals(expected,actual);
     }
 
-//    @Test
-//    public void testFindHarryInGivenStringInvalid() {
-//        String expected = "";
-//        String actual = characterob.findHarryInGivenString("");
-//        assertNull(expected,actual);
-//    }
+    @Test
+    public void testFindHarryInGivenStringInvalid() {
+        String expected = "Null input is not expected";
+        String actual = characterob.findHarryInGivenString("null");
+        assertNotEquals(expected,actual);
+    }
 }

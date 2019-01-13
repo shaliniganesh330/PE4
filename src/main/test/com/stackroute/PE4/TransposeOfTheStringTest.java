@@ -30,10 +30,10 @@ public class TransposeOfTheStringTest {
         String actual = stringob.transpose("a quick brown fox jumps over the lazy dog");
         assertNotEquals(expected,actual);
     }
-//    @Test
-//    public void testTransposingTheStringInvalid() {
-//        String expected = "";
-//        String actual = stringob.transpose("");
-//        assertNull(expected,actual);
-//    }
+    @Test
+    public void testTransposingTheStringInvalid() {
+        String expected = "";
+        String actual = stringob.transpose("");
+        assertNotNull(actual);
+    }
 }
